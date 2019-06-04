@@ -1,0 +1,15 @@
+{
+  "name": "eth-to-eos",
+  "version": "1.0.0",
+  "description": "Ethereum to EOS private key conversion",
+  "author": "Leonid Beder",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbeder/eth-to-eos.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
