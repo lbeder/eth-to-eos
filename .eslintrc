@@ -18,7 +18,8 @@
         ],
         "space-before-function-paren": "error",
         "no-continue": "off",
-        "arrow-body-style": "off"
+        "arrow-body-style": "off",
+        "no-console": "off"
     },
     "globals": {
         "assert": true,
