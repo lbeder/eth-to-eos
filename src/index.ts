@@ -1,6 +1,6 @@
-const ecc = require('eosjs-ecc');
-const eth = require('ethereumjs-util');
-const prompt = require('password-prompt');
+import * as ecc from "eosjs-ecc";
+import * as eth from "ethereumjs-util";
+import * as prompt from "password-prompt";
 
 const convertKey = async () => {
   const inputPrivateKey = await prompt('ETH Private Key: ', { method: 'hide' });
