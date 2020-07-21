@@ -8,7 +8,11 @@ export default class Converter {
 
   constructor(ethPrivateKey: string) {
     const rawPrivateKey = Buffer.from(ethPrivateKey.startsWith("0x") ? ethPrivateKey.substr(2) : ethPrivateKey, "hex");
-    if (!eth.isValidPrivate(rawPrivateKey)) {
+    try {
+      if (!eth.isValidPrivate(rawPrivateKey)) {
+        throw new Error("Invalid Ethereum Private Key!");
+      }
+    } catch {
       throw new Error("Invalid Ethereum Private Key!");
     }
 
